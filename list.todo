@@ -1,0 +1,78 @@
+{
+  "todotree": {
+    "tree": [
+      {
+        "key": 1700164847309,
+        "children": [
+          {
+            "key": 1700164855216,
+            "children": [],
+            "todo": {
+              "content": "Actually make the end command",
+              "id": 1700164855216,
+              "level": "danger",
+              "done": false,
+              "start": 1700164855216
+            }
+          },
+          {
+            "key": 1700164883263,
+            "children": [],
+            "todo": {
+              "content": "",
+              "id": 1700164883263,
+              "level": "default",
+              "done": false,
+              "start": 1700164883263
+            }
+          }
+        ],
+        "todo": {
+          "content": "Create commands",
+          "id": 1700164847309,
+          "level": "success",
+          "done": false,
+          "start": 1700164847309
+        }
+      },
+      {
+        "key": 1700164917827,
+        "children": [
+          {
+            "key": 1700164937195,
+            "children": [],
+            "todo": {
+              "content": "FOR AFTER DONE WITH COMMANDS",
+              "id": 1700164937195,
+              "level": "secondary",
+              "done": false,
+              "start": 1700164937195
+            }
+          }
+        ],
+        "todo": {
+          "content": "Make it be able to run without VSC",
+          "id": 1700164917827,
+          "level": "secondary",
+          "done": false,
+          "start": 1700164917827
+        }
+      }
+    ],
+    "expandKeys": [
+      1700164847309,
+      1700164917827
+    ],
+    "schema": "https://github.com/Saber2pr/vsc-ext-todolist/blob/master/src/api/type.ts#L3",
+    "add_mode": "bottom",
+    "virtual": false,
+    "showLine": false,
+    "playFontSize": 24,
+    "title": "list",
+    "autoSort": false,
+    "showEndTime": false,
+    "simpleMode": false,
+    "lang": "en",
+    "version": "1700164960055"
+  }
+}

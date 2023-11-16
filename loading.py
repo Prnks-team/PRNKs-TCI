@@ -20,7 +20,7 @@ print(""" __          __  _                                                _
 input("Waiting for input from user: ")
 commands = input().lower()
 
-helpcommands = ["end", "exit", "open" ]
+helpcommands = ["end", "exit", "open", "create file", "file write", "faq", "info"]
 
 if "help" in commands:                                #prints the list of commands WIP
     print(helpcommands)
@@ -36,6 +36,13 @@ if "file write" in commands:                            #Opens the file that was
     input("Write what you want to write: ")
     filewrite = input().lower()
     file.write(filewrite)
-    
 
+if "info" in commands:                                      #Displays current info
+    print("""CURRENT INFO
+          VERSION 0.1
+          STABLE VERSION
+           """)
+
+if "faq" in commands:                                              #Displays owner ship
+    print("CREATED BY PRNK DO NOT STEAL THIS CODE ")
     
