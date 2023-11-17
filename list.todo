@@ -124,6 +124,19 @@
           "done": false,
           "start": 1700164917827
         }
+      },
+      {
+        "key": 1700239095693,
+        "children": [],
+        "todo": {
+          "content": "ADD GNU",
+          "id": 1700239095693,
+          "level": "default",
+          "done": true,
+          "start": 1700239095693,
+          "focus": false,
+          "end": 1700246812428
+        }
       }
     ],
     "expandKeys": [
@@ -141,6 +154,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1700234039637"
+    "version": "1700246818916"
   }
 }
