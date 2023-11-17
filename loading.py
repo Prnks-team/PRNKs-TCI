@@ -17,10 +17,13 @@ print(""" __          __  _                                                _
 
                                                                            """)
 
-input("Waiting for input from user: ")
+def start():
+    input("Waiting for input from user: ")
 commands = input().lower()
 
-helpcommands = ["end", "exit", "open", "create file", "file write", "faq", "info"]
+print("It's recomended that you use the setup command if this is your first time starting the program.")
+
+helpcommands = ["end", "exit", "open", "create file", "file write", "faq", "info", "banana", "name", "setup"]
 
 if "help" in commands:                                #prints the list of commands WIP
     print(helpcommands)
@@ -45,4 +48,29 @@ if "info" in commands:                                      #Displays current in
 
 if "faq" in commands:                                              #Displays owner ship
     print("CREATED BY PRNK DO NOT STEAL THIS CODE ")
+
+
+if "banana" in commands:
+    print("""  .----------------.  .----------------.  .-----------------. .----------------.  .-----------------. .----------------. 
+| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |
+| |   ______     | || |      __      | || | ____  _____  | || |      __      | || | ____  _____  | || |      __      | |
+| |  |_   _ \    | || |     /  \     | || ||_   \|_   _| | || |     /  \     | || ||_   \|_   _| | || |     /  \     | |
+| |    | |_) |   | || |    / /\ \    | || |  |   \ | |   | || |    / /\ \    | || |  |   \ | |   | || |    / /\ \    | |
+| |    |  __'.   | || |   / ____ \   | || |  | |\ \| |   | || |   / ____ \   | || |  | |\ \| |   | || |   / ____ \   | |
+| |   _| |__) |  | || | _/ /    \ \_ | || | _| |_\   |_  | || | _/ /    \ \_ | || | _| |_\   |_  | || | _/ /    \ \_ | |
+| |  |_______/   | || ||____|  |____|| || ||_____|\____| | || ||____|  |____|| || ||_____|\____| | || ||____|  |____|| |
+| |              | || |              | || |              | || |              | || |              | || |              | |
+| '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |
+ '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' """)
     
+
+if "name" in commands:
+    name = input("Please enter your name: ")
+    print(name)
+
+
+if "setup" in commands:
+ name = input("Please enter your user name:")
+ print("You're all setup now!" )
+ time.sleep(5)
+ start()
