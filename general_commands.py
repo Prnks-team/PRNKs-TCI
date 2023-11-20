@@ -19,6 +19,7 @@
 
 import os
 import subprocess 
+import platform
 
 def execute_python_file(file_path):
    try:
@@ -62,7 +63,9 @@ commands = input().lower()
 
 print("It's recomended that you use the setup command if this is your first time starting the program.")
 
-helpcommands = ["end", "exit", "open", "create file", "file write", "faq", "info", "banana","setup", "secret (REQUIRES PIN)", "patch notes"]
+
+helpcommands = ["end", "exit", "open", "create file", "file write", "faq", "info", "banana","setup", "secret (REQUIRES PIN)", "machine info"]
+
 
 if "help" in commands:                                #prints the list of commands WIP
     print(helpcommands)
@@ -88,6 +91,7 @@ if "info" in commands:                                      #Displays current in
           VERSION 0.1.2
           STABLE VERSION
            """)
+    print(platform.python_version())
     start()
 
 if "faq" in commands:                                              #Displays owner ship
@@ -118,7 +122,8 @@ if "banana" in commands:
 
 
 if "setup" in commands:
- name = input("Please enter your user name:")
+ input("Please enter your user name:")
+ name = input().lower()
  print("You're all setup now!" )
  time.sleep(5)
  start()
@@ -144,8 +149,10 @@ if "copyright" in commands:
 
 if "secret" in commands:
     execute_python_file(file_path)
-    
-if "patch notes" in commands:
-    print("""
-          Run 'faq' for current version of the program 
-          https://github.com/prnk1243/PRNKs-terminal/releases/tag/Alpha""")
+
+
+
+
+if "machine info" in commands:
+    print(platform.uname())
+
