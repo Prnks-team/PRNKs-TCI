@@ -92,10 +92,10 @@ if "info" in commands:                                      #Displays current in
 
 if "faq" in commands:                                              #Displays owner ship
     print("""CREATED BY PRNK DO NOT STEAL THIS CODE
-          The source code can be accessed here: https://github.com/prnk1243/Prnks-terminal/tree/main
+          The source code can be accessed here: https://github.com/prnk1243/PRNKs-terminal/tags
           
           
-          
+        
           
           Use the copyright command to see the copyright.""")
     start()
