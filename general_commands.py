@@ -62,7 +62,7 @@ commands = input().lower()
 
 print("It's recomended that you use the setup command if this is your first time starting the program.")
 
-helpcommands = ["end", "exit", "open", "create file", "file write", "faq", "info", "banana","setup", "secret (REQUIRES PIN)"]
+helpcommands = ["end", "exit", "open", "create file", "file write", "faq", "info", "banana","setup", "secret (REQUIRES PIN)", "patch notes"]
 
 if "help" in commands:                                #prints the list of commands WIP
     print(helpcommands)
@@ -85,7 +85,7 @@ if "file write" in commands:                            #Opens the file that was
 
 if "info" in commands:                                      #Displays current info
     print("""CURRENT INFO
-          VERSION 0.1
+          VERSION 0.1.2
           STABLE VERSION
            """)
     start()
@@ -145,3 +145,7 @@ if "copyright" in commands:
 if "secret" in commands:
     execute_python_file(file_path)
     
+if "patch notes" in commands:
+    print("""
+          Run 'faq' for current version of the program 
+          https://github.com/prnk1243/PRNKs-terminal/releases/tag/Alpha""")
