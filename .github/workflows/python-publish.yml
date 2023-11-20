@@ -30,6 +30,11 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install build
+        pip install os
+        pip install subprocess
+        pip install TIME-python 
+        pip install alive_progress
+        pip install sys
     - name: Build package
       run: python -m build
     - name: Publish package

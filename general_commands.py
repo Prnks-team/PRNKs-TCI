@@ -18,7 +18,7 @@
     # https://github.com/prnk1243/Prnks-terminal/tree/main
 
 import os
-import subprocess
+import subprocess 
 
 def execute_python_file(file_path):
    try:
