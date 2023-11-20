@@ -72,12 +72,12 @@ if "end" in commands:                               #ends the command system
     sys.exit(1)
     
 
-if "create file" in commands:                               #creates file text.txt (shocking name)
+if "create file" in commands:                         #creates file text.txt (shocking name)
     open('text.txt', 'w')
     start()
 
 if "file write" in commands:                            #Opens the file that was created an writes a string inside of it
-    file = open('text.txt', 'a')
+    file = ('text.txt', 'a')
     input("Write what you want to write: ")
     filewrite = input().lower()
     file.write(filewrite)
@@ -85,7 +85,7 @@ if "file write" in commands:                            #Opens the file that was
 
 if "info" in commands:                                      #Displays current info
     print("""CURRENT INFO
-          VERSION 0.2
+          VERSION 0.1
           STABLE VERSION
            """)
     start()
@@ -143,5 +143,5 @@ if "copyright" in commands:
     start()
 
 if "secret" in commands:
-    print("hewo master~ what cawon i get you~ >-<")
     execute_python_file(file_path)
+    
