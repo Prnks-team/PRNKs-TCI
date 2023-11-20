@@ -1,1 +1,1 @@
-print("hi")
+print("Well hello you've seemed to execute the secret command when a pin wasn't added! you're probably a alpha tester reading this and i thank you for taking the time out of your day to test this program and make it better >-<")
