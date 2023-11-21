@@ -10,3 +10,17 @@ You need to press enter one time after the command input pops up!
 Thank you and have a good day
 
 # READ THE LICENSE BEFORE EDITING THE SOFTWARE
+
+
+
+
+
+# HOW TO START THE PROGRAM
+
+*YOU NEED TO RUN THIS IN VSC FOR IT TOO WORK!!!*
+
+
+* Open program
+* Press run'=
+* Enter Command
+* boom you got it!
