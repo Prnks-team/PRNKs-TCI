@@ -37,7 +37,7 @@ def execute_python_file(file_path):
 
 file_path = '/workspaces/H-/aaaa.py'
 
-from alive_progress import alive_bar; import time
+from alive_progress import alive_bar; import time                       # ! loading bar runs 4 times before program starts fix this now!!!!!!
 import sys
 
 for total in 5000, 7000, 4000, 0:
@@ -64,37 +64,31 @@ commands = input().lower()
 print("It's recomended that you use the setup command if this is your first time starting the program.")
 
 
-helpcommands = ["end", "exit", "open", "create file", "file write", "faq", "inf", "banana","setup", "secret (REQUIRES PIN)", "machine info"]
+helpcommands = ["end", "exit", "open", "create file", "file write", "faq","banana","setup", "secret (REQUIRES PIN)", "machine info"]
 
 
-if "help" in commands:                                #prints the list of commands WIP
+if "help" in commands:                                # *prints the list of commands WIP
     print(helpcommands)
-    start()
+    start() 
 
-if "end" in commands:                               #ends the command system
+if "end" in commands:                               # *ends the command system
     sys.exit(1)
     
 
-if "create file" in commands:                         #creates file text.txt (shocking name)
-    open('text.txt', 'w')
+if "create file" in commands:                       # * creates file text.txt (shocking name)
+    open('text.txt', 'w')                           
     start()
 
-if "file write" in commands:                            #Opens the file that was created an writes a string inside of it
+if "file write" in commands:                            # *Opens the file that was created an writes a string inside of it
     file = ('text.txt', 'a')
     input("Write what you want to write: ")
     filewrite = input().lower()
     file.write(filewrite)
     start()
 
-if "inf" in commands:                                      #Displays current info
-    print("""CURRENT INFO
-          VERSION 0.1.2
-          STABLE VERSION
-           """)
-    print(platform.python_version())
-    start()
 
-if "faq" in commands:                                              #Displays owner ship
+
+if "faq" in commands:                                              # * Displays owner ship
     print("""CREATED BY PRNK DO NOT STEAL THIS CODE
           The source code can be accessed here: https://github.com/prnk1243/PRNKs-terminal/tags
           
