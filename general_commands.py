@@ -64,7 +64,7 @@ commands = input().lower()
 print("It's recomended that you use the setup command if this is your first time starting the program.")
 
 
-helpcommands = ["end", "exit", "open", "create file", "file write", "faq", "info", "banana","setup", "secret (REQUIRES PIN)", "machine info"]
+helpcommands = ["end", "exit", "open", "create file", "file write", "faq", "inf", "banana","setup", "secret (REQUIRES PIN)", "machine info"]
 
 
 if "help" in commands:                                #prints the list of commands WIP
@@ -86,7 +86,7 @@ if "file write" in commands:                            #Opens the file that was
     file.write(filewrite)
     start()
 
-if "info" in commands:                                      #Displays current info
+if "inf" in commands:                                      #Displays current info
     print("""CURRENT INFO
           VERSION 0.1.2
           STABLE VERSION
