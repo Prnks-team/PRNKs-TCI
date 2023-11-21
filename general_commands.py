@@ -40,11 +40,9 @@ file_path = '/workspaces/H-/aaaa.py'
 from alive_progress import alive_bar; import time                       # ! loading bar runs 4 times before program starts fix this now!!!!!!
 import sys
 
-for total in 5000, 7000, 4000, 0:
-    with alive_bar(total) as bar:
-        for _ in range(5000):
-            time.sleep(.001)
-            bar()
+with alive_bar(1200000, ctrl_c='b', unit='b', scale='SI', precision=2) as bar: 
+               for I in range(1200000): 
+                bar()
 
 print(""" __          __  _                                                _ 
  \ \        / / | |                                              | |
