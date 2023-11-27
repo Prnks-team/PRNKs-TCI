@@ -56,10 +56,13 @@ print(""" __          __  _                                                _
 
 def start():
     input("Waiting for input from user: ")
+    setuptext()
 start()
+
 commands = input().lower()
 
-print("It's recomended that you use the setup command if this is your first time starting the program.")
+def setuptext():
+    print("It's recomended that you use the setup command if this is your first time starting the program.")
 
 
 helpcommands = ["end", "exit", "open", "create file", "file write", "faq","banana","setup", "secret (REQUIRES PIN)", "machine info"]
@@ -118,6 +121,7 @@ if "setup" in commands:
  name = input().lower()
  print("You're all setup now!" )
  time.sleep(5)
+ 
  start()
 
 
