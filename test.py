@@ -1,3 +1,5 @@
+#RUN github rebase if its not letting you sync
+
 # Copyright (C) <2023>  <Anthony J Counts>
  # This software is a terminal that you can execute command's in.
 
