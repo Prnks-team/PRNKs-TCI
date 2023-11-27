@@ -39,7 +39,7 @@ def execute_python_file(file_path):
 
 file_path = '/workspaces/H-/aaaa.py'
 
-from alive_progress import alive_bar; import time                       # ! loading bar runs 4 times before program starts fix this now!!!!!!
+from alive_progress import alive_bar; import time                       # * [FIXED] loading bar runs 4 times before program starts fix this now!!!!!!
 import sys
 
 with alive_bar(1200000, ctrl_c='b', unit='b', scale='SI', precision=2) as bar: 
