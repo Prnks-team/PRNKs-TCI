@@ -89,6 +89,10 @@ if "file write" in commands:                            # *Opens the file that w
     file.write(filewrite)
     start()
 
+if "file open" in commands:
+    f = open("demofile.txt", "r")
+
+    print(f.read())
 
 
 if "faq" in commands:                                              # * Displays owner ship
