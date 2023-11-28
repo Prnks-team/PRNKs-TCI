@@ -23,6 +23,9 @@ import os
 import subprocess 
 import platform
 
+def setuptext():
+    print("It's recomended that you use the setup command if this is your first time starting the program.")
+
 def execute_python_file(file_path):
    try:
       completed_process = subprocess.run(['python', file_path], capture_output=True, text=True)
@@ -57,17 +60,14 @@ print(""" __          __  _                                                _
                                                                            """)
 
 def start():
-    input("Waiting for input from user: ")
     setuptext()
+    input("Waiting for input from user: ")
 start()
 
 commands = input().lower()
 
-def setuptext():
-    print("It's recomended that you use the setup command if this is your first time starting the program.")
 
-
-helpcommands = ["end", "exit", "open", "create file", "file write", "faq","banana","setup", "secret (REQUIRES PIN)", "machine info"]
+helpcommands = ["end", "exit", "open", "create file", "file write", "faq","banana","setup", "secret (REQUIRES PIN)", "machine info", "file open"]
 
 
 if "help" in commands:                                # *prints the list of commands WIP
@@ -90,7 +90,7 @@ if "file write" in commands:                            # *Opens the file that w
     start()
 
 if "file open" in commands:
-    f = open("demofile.txt", "r")
+    f = open("idk.txt", "r")
 
     print(f.read())
 
