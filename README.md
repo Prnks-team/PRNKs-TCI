@@ -9,8 +9,6 @@ You need to press enter one time after the command input pops up!
 
 Thank you and have a good day
 
-# READ THE LICENSE BEFORE EDITING THE SOFTWARE
-
 
 
 
