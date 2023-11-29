@@ -61,13 +61,13 @@ print(""" __          __  _                                                _
 
 def start():
     setuptext()
-    input("Waiting for input from user: ")
+    input("Waiting for input from user (Press enter once): ")
 start()
 
 commands = input().lower()
 
 
-helpcommands = ["end", "exit", "open", "create file", "file write", "faq","banana","setup", "secret (REQUIRES PIN)", "machine info", "file open"]
+helpcommands = ["end", "exit", "open", "create file", "file write", "faq","banana","setup", "secret (REQUIRES PIN)", "machine info", "file open", "license"]
 
 
 if "help" in commands:                                # *prints the list of commands WIP
@@ -95,8 +95,10 @@ if "file open" in commands:
     print(f.read())
 
 
-if "faq" in commands:                                              # * Displays owner ship
+if "faq" in commands:                                              # * Displays owner ship / Version / source code / etc
     print("""CREATED BY PRNK DO NOT STEAL THIS CODE
+            Version: a0.0.3
+            Current build: Canary a0.0.3 
           The source code can be accessed here: https://github.com/prnk1243/PRNKs-terminal/tags
           
           
@@ -150,11 +152,16 @@ if "copyright" in commands:
     start()
 
 if "secret" in commands:
-    execute_python_file(file_path)
+    execute_python_file('/workspaces/PRNKs-terminal/start/story.py')
 
 
 
 
 if "machine info" in commands:
     print(platform.uname())
+    start()
 
+if "license" in commands:
+    x = open('/workspaces/PRNKs-terminal/start/sec/License.txt', 'r')
+    print(x.read())
+    start()
