@@ -97,7 +97,8 @@ if "file open" in commands:
 
 if "faq" in commands:                                              # * Displays owner ship / Version / source code / etc
     print("""CREATED BY PRNK DO NOT STEAL THIS CODE
-            Version: 0.0.3 (ALPHA)
+            Version: a0.0.3
+            Current build: Canary a0.0.3 
           The source code can be accessed here: https://github.com/prnk1243/PRNKs-terminal/tags
           
           
