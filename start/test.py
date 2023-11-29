@@ -58,9 +58,11 @@ print(""" __          __  _                                                _
                                                                     
 
                                                                            """)
-
+print("Welcome to PRNKs terminal! Type help to see a list of commands.")
+print("Please note that this is a test build and may not be stable.")
 def start():
     setuptext()
+
     input("Waiting for input from user (Press enter once): ")
 start()
 
@@ -98,7 +100,9 @@ if "file open" in commands:
 if "faq" in commands:                                              # * Displays owner ship / Version / source code / etc
     print("""CREATED BY PRNK DO NOT STEAL THIS CODE
             Version: a0.0.3
-            Current build: Canary a0.0.3 
+            Current build: Canary a0.0.3
+            Current build date: 11/29/2023
+            Current build info: This build is a canary build. This means that it is a test build and may not be stable. 
           The source code can be accessed here: https://github.com/prnk1243/PRNKs-terminal/tags
           
           
