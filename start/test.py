@@ -170,3 +170,4 @@ if "license" in commands:
     x = open('/workspaces/PRNKs-terminal/start/sec/License.txt', 'r')
     print(x.read())
     start()
+
