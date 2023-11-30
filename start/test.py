@@ -91,11 +91,6 @@ if "file write" in commands:                            # *Opens the file that w
     file.write(filewrite)
     start()
 
-if "file open" in commands:
-    f = open("idk.txt", "r")
-
-    print(f.read())
-
 
 if "faq" in commands:                                              # * Displays owner ship / Version / source code / etc
     print("""CREATED BY PRNK DO NOT STEAL THIS CODE
@@ -168,4 +163,11 @@ if "machine info" in commands:
 if "license" in commands:
     x = open('/workspaces/PRNKs-terminal/start/sec/License.txt', 'r')
     print(x.read())
+    start()
+
+
+if "open" in commands:
+    print("What do you want to open?")
+    open = input().lower()
+    os.system(open)
     start()
