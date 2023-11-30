@@ -94,7 +94,7 @@ if "file write" in commands:                            # *Opens the file that w
 
 if "faq" in commands:                                              # * Displays owner ship / Version / source code / etc
     print("""CREATED BY PRNK DO NOT STEAL THIS CODE
-            Version: a0.0.3
+            Version: v0.0.3-Canary
             Current build: Canary a0.0.3
             Current build date: 11/29/2023
             Current build info: This build is a canary build. This means that it is a test build and may not be stable. 
