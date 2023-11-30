@@ -58,6 +58,8 @@ print(""" __          __  _                                                _
                                                                     
 
                                                                            """)
+print("Type help to see the list of commands.")
+print("This is a dev build and is not stable. If you are not a dev you should not be using this build.")
 
 def start():
     setuptext()
@@ -97,7 +99,11 @@ if "file open" in commands:
 
 if "faq" in commands:                                              # * Displays owner ship / Version / source code / etc
     print("""CREATED BY PRNK DO NOT STEAL THIS CODE
-            Version: 0.0.3 (ALPHA)
+            Version: 0.0.3 (DEV BUILD)
+          Current build: Dev build 0.0.3
+          Build date: 11/30/2023
+          build description: This build is a dev build and is not stable.
+          IF YOU ARE NOT A DEV YOU SHOULD NOT BE USING THIS BUILD.
           The source code can be accessed here: https://github.com/prnk1243/PRNKs-terminal/tags
           
           
