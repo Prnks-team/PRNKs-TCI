@@ -64,9 +64,10 @@ def start():
     setuptext()
 
     input("Waiting for input from user (Press enter once): ")
+    
 start()
-
 commands = input().lower()
+
 
 
 helpcommands = ["end", "exit", "open", "create file", "file write", "faq","banana","setup", "secret (REQUIRES PIN)", "machine info", "file open", "license"]
@@ -163,8 +164,9 @@ if "machine info" in commands:
     start()
 
 if "license" in commands:
-    x = open('/workspaces/PRNKs-terminal/start/sec/License.txt', 'r')
-    print(x.read())
+    file = open('/workspaces/PRNKs-TCI/start/License.txt', 'r')
+    print(file.read())
     start()
+     
 
 
