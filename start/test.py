@@ -58,15 +58,13 @@ print(""" __          __  _                                                _
                                                                     """)
  
 print("Type help to see the list of commands.")
-print("This is a dev build and is not stable. If you are not a dev you should not be using this build.")
-
 def start():
     setuptext()
 
+
     input("Waiting for input from user (Press enter once): ")
-    
 start()
-commands = input().lower()
+
 
 
 
@@ -101,13 +99,14 @@ if "faq" in commands:                                              # * Displays 
           build description: This build is a dev build and is not stable.
           IF YOU ARE NOT A DEV YOU SHOULD NOT BE USING THIS BUILD.
 
-          The source code can be accessed here: https://github.com/prnk1243/PRNKs-terminal/tags
-          
-          
-        
-          
-          Use the copyright command to see the copyright.""")
-    start()
+
+==
+
+if "faq" in commands:                                              # * Displays owner ship / Version / source code / etc
+    print("""CREATED BY PRNK DO NOT STEAL THIS CODE
+            Version: a0.0.3
+            Current build: Canary a0.0.3 
+
 
 
 if "banana" in commands:
@@ -163,10 +162,10 @@ if "machine info" in commands:
     print(platform.uname())
     start()
 
+
 if "license" in commands:
     file = open('/workspaces/PRNKs-TCI/start/License.txt', 'r')
     print(file.read())
     start()
      
-
 
