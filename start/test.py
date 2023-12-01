@@ -55,16 +55,17 @@ print(""" __          __  _                                                _
    \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \ | | | / __|/ _ \ '__| |
     \  /\  /  __/ | (_| (_) | | | | | |  __/ | |_| \__ \  __/ |  |_|
      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__,_|___/\___|_|  (_)
-                                                                    
-
-                                                                           """)
-
+                                                                    """)
+ 
+print("Type help to see the list of commands.")
 def start():
     setuptext()
+
+
     input("Waiting for input from user (Press enter once): ")
 start()
 
-commands = input().lower()
+
 
 
 helpcommands = ["end", "exit", "open", "create file", "file write", "faq","banana","setup", "secret (REQUIRES PIN)", "machine info", "file open", "license"]
@@ -89,23 +90,23 @@ if "file write" in commands:                            # *Opens the file that w
     file.write(filewrite)
     start()
 
-if "file open" in commands:
-    f = open("idk.txt", "r")
 
-    print(f.read())
+if "faq" in commands:                                              # * Displays owner ship / Version / source code / etc
+    print("""CREATED BY PRNK DO NOT STEAL THIS CODE 
+            Version: 0.0.3 (DEV BUILD)
+          Current build: Dev build 0.0.3
+          Build date: 11/30/2023
+          build description: This build is a dev build and is not stable.
+          IF YOU ARE NOT A DEV YOU SHOULD NOT BE USING THIS BUILD.
 
+
+==
 
 if "faq" in commands:                                              # * Displays owner ship / Version / source code / etc
     print("""CREATED BY PRNK DO NOT STEAL THIS CODE
             Version: a0.0.3
             Current build: Canary a0.0.3 
-          The source code can be accessed here: https://github.com/prnk1243/PRNKs-terminal/tags
-          
-          
-        
-          
-          Use the copyright command to see the copyright.""")
-    start()
+
 
 
 if "banana" in commands:
@@ -161,7 +162,10 @@ if "machine info" in commands:
     print(platform.uname())
     start()
 
+
 if "license" in commands:
-    x = open('/workspaces/PRNKs-terminal/start/sec/License.txt', 'r')
-    print(x.read())
+    file = open('/workspaces/PRNKs-TCI/start/License.txt', 'r')
+    print(file.read())
     start()
+     
+
