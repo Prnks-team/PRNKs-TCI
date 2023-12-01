@@ -55,8 +55,7 @@ print(""" __          __  _                                                _
    \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \ | | | / __|/ _ \ '__| |
     \  /\  /  __/ | (_| (_) | | | | | |  __/ | |_| \__ \  __/ |  |_|
      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__,_|___/\___|_|  (_)
-                                                                    
-
+                                                                    """)
  
 print("Type help to see the list of commands.")
 print("This is a dev build and is not stable. If you are not a dev you should not be using this build.")
